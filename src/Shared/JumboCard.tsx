@@ -62,7 +62,7 @@ const JumboCardContainer = styled.div`
 
 const SideContainer = styled.div`
   grid-area: side;
-  background: ${colours.Blue};
+  background: ${colours.Yellow};
   color: ${colours.light};
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ const SideContainer = styled.div`
     position: absolute;
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
-    border-left: 22px solid ${colours.Blue};
+    border-left: 22px solid ${colours.Yellow};
     right: -22px;
     top: calc(50% - 22px);
   }
@@ -86,7 +86,7 @@ const SideContainer = styled.div`
     text-align: center;
     
     &:after {
-      border-top: 22px solid ${colours.Blue};
+      border-top: 22px solid ${colours.Yellow};
       border-bottom: none;
       border-left: 22px solid transparent;
       border-right: 22px solid transparent;

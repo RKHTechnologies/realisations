@@ -1,6 +1,6 @@
 import React from "react";
 import { PageContainer } from "../Shared/SharedStyles";
-import logo from '../logo-v.svg';
+import logo from '../logo.svg';
 import styled from "styled-components";
 
 const LogoContainer = styled.img`
@@ -10,7 +10,7 @@ const LogoContainer = styled.img`
 const Error404: React.FC = () => {
   return (
     <PageContainer>
-      <LogoContainer src={logo} alt="2nd 60th Logo" />
+      <LogoContainer src={logo} alt="Realisations Logo" />
       <h1>404 - Page not found</h1>
       <p>{`Current URL: "${window.location.pathname}"`}</p>
     </PageContainer>

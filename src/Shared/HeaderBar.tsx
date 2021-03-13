@@ -21,7 +21,7 @@ const HeaderNav = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: ${colours.light};
+    background: ${colours.dark};
     z-index: 2;
 `;
 
@@ -32,12 +32,12 @@ const HeaderNavContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: ${colours.light};
-    color: ${colours.dark};
+    background: ${colours.dark};
+    color: ${colours.light};
     transition: height 0.3s ease;
 
     & > img {
-        height: 68px;
+        height: 100px;
         margin-left: 50px;
 
         @media(max-width: 350px) {
@@ -58,7 +58,7 @@ const Logo = styled.img`
 const HeaderButton = styled.button`
     height: 100%;
     background: transparent;
-    color: ${colours.Purple};
+    color: ${colours.light};
     cursor: pointer;
     padding: 15px 14px;
     border: none;
@@ -96,7 +96,7 @@ const NavItemsRightContainer = styled.div`
         top: 100px;
         left: 20px;
         right: 20px;
-        background: ${colours.Purple};
+        background: ${colours.primary};
 
 
         ${HeaderButton} {
@@ -155,7 +155,7 @@ const Burger = styled.div`
 const BurgerContainer = styled.div`
     height: 100px;
     width: 100px;
-    background: ${(p: menuProps) => p.menuOpen ? colours.Purple : "transparent"};
+    background: ${(p: menuProps) => p.menuOpen ? colours.primary : "transparent"};
     position: relative;
     align-self: flex-end;
     cursor: pointer;
@@ -183,27 +183,17 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
         history.push(`${process.env.PUBLIC_URL}${link}`);
     }
 
-    const scoutShop = () => {
-        console.log("Going to scout shop");
-        setMenuOpen(false);
-        window.open("http://www.leicestershirescoutshop.com/", "_blank");
-    }
-
     return (
         <HeaderNav stickyHeader={stickyHeader}>
             <HeaderNavContainer>
-                <Logo src={logo} alt="2nd 60th Leicester Scouts" onClick={() => handleNav("")} />
+                <Logo src={logo} alt="Realisations Logo" onClick={() => handleNav("")} />
                 <BurgerContainer menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Burger menuOpen={menuOpen} /></BurgerContainer>
                 <NavItemsRightContainer menuOpen={menuOpen}>
                     <HeaderButton onClick={() => handleNav("")}>Home</HeaderButton>
-                    {/* <HeaderButton onClick={() => handleNav("/about")}>About Us</HeaderButton> */}
-                    <HeaderButton onClick={() => handleNav("/beavers")}>Beavers</HeaderButton>
-                    <HeaderButton onClick={() => handleNav("/cubs")}>Cubs</HeaderButton>
-                    <HeaderButton onClick={() => handleNav("/scouts")}>Scouts</HeaderButton>
-                    <HeaderButton onClick={() => handleNav("/explorers")}>Explorers</HeaderButton>
-                    <HeaderButton onClick={() => handleNav("/ourCalendar")}>Our Calendar</HeaderButton>
-                    <HeaderButton onClick={() => handleNav("/documents")}>Useful Documents</HeaderButton>
-                    <HeaderButton onClick={scoutShop}>Scout Shop</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/vision-boarding")}>Vision Boarding</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/events")}>Events</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/life-balance-checker")}>Life Balance Checker</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/about")}>About</HeaderButton>
                 </NavItemsRightContainer>
             </HeaderNavContainer>
         </HeaderNav>
