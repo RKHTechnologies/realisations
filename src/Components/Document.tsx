@@ -7,19 +7,21 @@ import styled from 'styled-components';
 const DocumentContainer = styled.a`
   width: 100%;
   margin: auto;
-  background: #eaeaea;
+  background: ${colours.dark};
   box-sizing: border-box;
   text-decoration: none;
-  color: ${colours.dark};
+  color: ${colours.light};
   border-radius: 4px;
   display: grid;
   grid-template-columns: 90px 1fr;
   grid-template-areas: 
     'icon name'
     'icon description';
+  transition: all 0.1s ease;
 
   &:hover {
-    background: #c9c9c9;
+    background: #464646;
+    box-shadow: 0 0.25rem 0.125rem 0 rgb(0 0 0 / 8%);
   }
 
   @media(max-width: ${SharedSettings.mobile}) {
@@ -61,6 +63,7 @@ interface IProps {
 }
 
 const Document: FC<IProps> = ({ name, description, filename, accent }: IProps) => {
+  debugger;
   return (
     <DocumentContainer href={require(`../documents/${filename}`)} target="_blank" rel="noreferrer noopener">
       <PDFIcon icon={faFileAlt} size="4x" accent={accent} />

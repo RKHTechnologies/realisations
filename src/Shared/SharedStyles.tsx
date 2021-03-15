@@ -54,6 +54,7 @@ export const PageBodyContainer = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
+  background: ${colours.dark}e8;
   /* overflow-y: scroll; */
 `;
 
