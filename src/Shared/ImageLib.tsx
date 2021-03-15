@@ -1,4 +1,4 @@
-import rkh from '../img/RKHT_logo.png';
+import rkh from '../Img/RKHT_logo.png';
 
 export const ImagesDesktop = {
   'rkh': rkh,

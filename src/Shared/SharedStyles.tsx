@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export type Colour = 'light' | 'dark' | 'primary' | 'Purple' | 'Teal' | 'Red' | 'Pink' | 'Green' | 'Navy' | 'Blue' | 'Yellow' | 'grey80' | 'grey60' | 'grey40' | 'grey20' | 'grey80';
+export type Colour = 'light' | 'dark' | 'primary' | 'Yellow' | 'grey80' | 'grey60' | 'grey40' | 'grey20' | 'grey80';
 
 interface ColoursProps {
     light: string,
