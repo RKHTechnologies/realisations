@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { colours, PageBodyContainer } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import Document from '../Components/Document';
+import doc from '../documents/word.doc';
 
 const Title = styled.h1`
   color: ${colours.light};
@@ -86,7 +87,7 @@ const Book: FC = () => {
 
             <DocumentsGroup>
               <GroupHeader>All Downloads</GroupHeader>
-              <Document name="All Realisations Downloads" description="Zip File with all downloads" icon="zip" filename="Realisations poster A4 min res.pdf" accent="Yellow" />
+              <Document name="All Realisations Downloads" description="Zip File with all downloads" icon="zip" filename="All Realisations Downloads.zip" accent="Yellow" />
             </DocumentsGroup>
           </DocumentsContainer>
         </div>
