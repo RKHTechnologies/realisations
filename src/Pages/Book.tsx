@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { colours, PageBodyContainer } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import Document from '../Components/Document';
-import doc from '../documents/word.doc';
 
 const Title = styled.h1`
   color: ${colours.light};
