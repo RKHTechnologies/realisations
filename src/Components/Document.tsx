@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { colours, Colour, SharedSettings } from '../Shared/SharedStyles';
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt, faFilePdf, faFileWord, faFileArchive } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 const DocumentContainer = styled.a`
@@ -60,13 +60,25 @@ interface IProps {
   description: string;
   filename: string;
   accent: Colour;
+  icon: "file" | "PDF" | "word" | "zip";
 }
 
-const Document: FC<IProps> = ({ name, description, filename, accent }: IProps) => {
-  debugger;
+const Document: FC<IProps> = ({ name, description, filename, accent, icon }: IProps) => {
+  console.dir(require(`../documents/${filename}`).default);
+
+  
   return (
-    <DocumentContainer href={require(`../documents/${filename}`)} target="_blank" rel="noreferrer noopener">
-      <PDFIcon icon={faFileAlt} size="4x" accent={accent} />
+    <DocumentContainer href={require(`../documents/${filename}`).default} target="_blank" rel="noreferrer noopener">
+      <PDFIcon 
+        icon={
+          icon == "zip" ? faFileArchive : 
+          icon == "PDF" ? faFilePdf :
+          icon == "word" ? faFileWord : 
+          faFileAlt
+        } 
+        size="4x"
+        accent={accent}
+      />
       <Name>{name}</Name>
       <Description>{description}</Description>
     </DocumentContainer>

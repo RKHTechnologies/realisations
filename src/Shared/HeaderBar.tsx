@@ -54,6 +54,13 @@ const Logo = styled.img`
     cursor: pointer;
 `;
 
+const PageTitle = styled.div`
+    color: ${colours.primary};
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 600;
+`;
+
 
 const HeaderButton = styled.button`
     height: 100%;
@@ -73,7 +80,7 @@ const HeaderButton = styled.button`
 
     &:focus {  
       outline: 0;
-      background: #eaeaea;
+      background: ${colours.light}0d;
     }
  
     &:last-child {
@@ -187,6 +194,7 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
         <HeaderNav stickyHeader={stickyHeader}>
             <HeaderNavContainer>
                 <Logo src={logo} alt="Realisations Logo" onClick={() => handleNav("")} />
+                {/* <PageTitle>Realisations</PageTitle> */}
                 <BurgerContainer menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Burger menuOpen={menuOpen} /></BurgerContainer>
                 <NavItemsRightContainer menuOpen={menuOpen}>
                     <HeaderButton onClick={() => handleNav("")}>Home</HeaderButton>

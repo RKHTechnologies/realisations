@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export type Colour = 'light' | 'dark' | 'primary' | 'Yellow' | 'grey80' | 'grey60' | 'grey40' | 'grey20' | 'grey80';
+export type Colour = 'light' | 'dark' | 'primary' | 'Yellow' | 'Red' | 'Blue' | 'grey80' | 'grey60' | 'grey40' | 'grey20' | 'grey80';
 
 interface ColoursProps {
     light: string,
     dark: string,
     primary: string,
     Yellow: string,
+    Red: string,
+    Blue: string,
     grey80: string,
     grey60: string,
     grey40: string,
@@ -20,6 +22,8 @@ export const colours: ColoursProps = {
     primary: "#FCEB68",
         
     Yellow: "#FCEB68",
+    Red: "#E22E12",
+    Blue: "#006DDF",
     grey80: "#333333",
     grey60: "#666666",
     grey40: "#999999",
@@ -54,8 +58,6 @@ export const PageBodyContainer = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background: ${colours.dark}e8;
-  /* overflow-y: scroll; */
 `;
 
 

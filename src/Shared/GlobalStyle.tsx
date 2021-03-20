@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 900;
     }
 
+    html {
+        background: ${colours.dark}e8;
+    }
+
     ::-webkit-scrollbar {
         width: 8px;
     }

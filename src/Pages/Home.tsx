@@ -133,7 +133,9 @@ const Home: FC = () => {
       
       <Section id="welcome">    
         <div className="wrapper">
-          <WelcomeContainer>
+
+          
+          {/* <WelcomeContainer>
             <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
             <WelcomeText>
               If you love the great outdoors, learning new skills, meeting new friends, being creative, working as a team and get the opportunity to build in confidence, self esteem and the passion to get more out of life then 2nd 60th Leicester Scout group is the place for you!
@@ -147,11 +149,10 @@ const Home: FC = () => {
               Many people have been Scouts over the years - Could you be the next?
             </WelcomeText>
             <GroupImage image={mobile ? ImagesMobile["rkh"] : ImagesDesktop["rkh"]}/>
-            {/* <FindOutMore onClick={() => history.push(`${process.env.PUBLIC_URL}/about`)}>Find out more</FindOutMore> */}
-          </WelcomeContainer>
+          </WelcomeContainer> */}
         </div>
       </Section>
-
+{/* 
       <Section id="sections">
         <div className="wrapper">
           <ScoutSection />
@@ -160,9 +161,9 @@ const Home: FC = () => {
 
       <Section id="ContactUs" fullwidth lastItem>
         <Contact />
-      </Section>
+      </Section> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </PageBodyContainer>
   );
 }
