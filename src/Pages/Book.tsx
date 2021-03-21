@@ -58,7 +58,7 @@ const Book: FC = () => {
       <Section id="Title" lastItem>
         <div className="wrapper">
           <Title>Realisations Downloads</Title>
-          <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
+          <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet</Description>
         </div>
       </Section>
 
@@ -77,6 +77,7 @@ const Book: FC = () => {
               <Document name="Document 6" description="Goals Table" icon="PDF" filename="6 - Realisations Goals Table (shortlist of 6) - What Why When.pdf" accent="Yellow" />
               <Document name="Document 7" description="Gratitude Blank" icon="PDF" filename="7 - Realisations Gratitude Blank.pdf" accent="Yellow" />
               <Document name="Document 8" description="Gratitude Prompt Sheet" icon="PDF" filename="8 - Realisations Gratitude Prompt Sheet.pdf" accent="Yellow" />
+              <Document name="Electronic VisBo" description="Download and fill in on device" icon="word" filename="Realisations Electronic VisBo.doc" accent="Yellow" />
             </DocumentsGroup>
 
             <DocumentsGroup>
@@ -86,7 +87,7 @@ const Book: FC = () => {
 
             <DocumentsGroup>
               <GroupHeader>All Downloads</GroupHeader>
-              <Document name="All Realisations Downloads" description="Zip File with all downloads" icon="zip" filename="All Realisations Downloads.zip" accent="Yellow" />
+              <Document name="All Downloads" description="Zip File with all downloads" icon="zip" filename="All Realisations Downloads.zip" accent="Yellow" />
             </DocumentsGroup>
           </DocumentsContainer>
         </div>

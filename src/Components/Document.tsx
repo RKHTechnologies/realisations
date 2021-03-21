@@ -5,7 +5,7 @@ import { faFileAlt, faFilePdf, faFileWord, faFileArchive } from '@fortawesome/fr
 import styled from 'styled-components';
 
 const DocumentContainer = styled.a`
-  width: 100%;
+  width: 342px;
   margin: auto;
   background: ${colours.dark};
   box-sizing: border-box;
