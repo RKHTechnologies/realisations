@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colours, PageBodyContainer } from '../Shared/SharedStyles';
+import { colours, PageBodyContainer, SharedSettings } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import Document from '../Components/Document';
 
@@ -9,6 +9,14 @@ const Title = styled.h1`
   font-size: 4em;
   text-align: center;
   width: 100%;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    font-size: 3em;
+  }
+
+  @media(max-width: 320px) {
+    font-size: 2em;
+  }
 `;
 
 const Description = styled.div`
@@ -17,6 +25,10 @@ const Description = styled.div`
   text-align: center;
   width: 100%;
   font-weight: 400;
+
+  @media(max-width: 400px) {
+    font-size: 0.8em;
+  }
 `;
 
 
@@ -29,15 +41,18 @@ const DocumentsContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   width: 100%;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const DocumentsGroup = styled.div`
   width: 100%;
   grid-column: ${(p: ContainerProps) => p.fullWidth ? "1 / -1" : ""};
-  display: grid;
-  grid-template-columns: ${(p: ContainerProps) => p.fullWidth ? "1fr 1fr 1fr 1fr" : "1fr"};
-  grid-gap: 10px;
   margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
 
   @media(max-width: 660px) {
     grid-template-columns: 1fr;
@@ -45,11 +60,12 @@ const DocumentsGroup = styled.div`
 `;
 
 const GroupHeader = styled.div`
-  grid-column: 1 / -1;
+  width: 100%;
   text-align: center;
   font-size: 2em;
   font-weight: 400;
   color: ${colours.light};
+  margin-bottom: 20px;
 `;
 
 const Book: FC = () => {

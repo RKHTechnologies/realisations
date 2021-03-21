@@ -7,6 +7,7 @@ import styled from 'styled-components';
 const DocumentContainer = styled.a`
   width: 342px;
   margin: auto;
+  margin-bottom: 10px;
   background: ${colours.dark};
   box-sizing: border-box;
   text-decoration: none;

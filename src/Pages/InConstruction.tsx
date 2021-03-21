@@ -11,6 +11,7 @@ const Construction = styled.h1`
   color: ${colours.primary};
   font-size: 3em;
   font-weight: 400;
+  text-align: center;
 `;
 
 const SubHeading = styled.div`

@@ -18,7 +18,7 @@ function App() {
         <HeaderBar stickyHeader />
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}`} component={InConstruction} />
-          <Route exact path={`${process.env.PUBLIC_URL}/book`} component={InConstruction} />
+          <Route exact path={`${process.env.PUBLIC_URL}/book`} component={Book} />
           <Route exact path={`${process.env.PUBLIC_URL}/vision-boarding`} component={InConstruction} />
           <Route exact path={`${process.env.PUBLIC_URL}/events`} component={InConstruction} />
           <Route exact path={`${process.env.PUBLIC_URL}/Life-balance-checker`} component={InConstruction} />
