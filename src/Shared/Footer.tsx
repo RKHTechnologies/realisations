@@ -37,7 +37,7 @@ const FooterContainer = styled.footer`
 const Footer: FC = () => {
   return (
     <FooterContainer>
-      <p>Copyright © 2nd 60th Scouts. All rights reserved.</p>
+      <p>Copyright © Realisations. All rights reserved.</p>
       <div>Site built by RKH Technologies</div>
     </FooterContainer>
   );

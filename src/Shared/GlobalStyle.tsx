@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
         background: ${colours.dark}e8;
     }
 
+    h1, p {
+        color: ${colours.light};
+    }
+
     ::-webkit-scrollbar {
         width: 8px;
     }
