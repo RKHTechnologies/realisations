@@ -18,6 +18,8 @@ const SubHeading = styled.div`
   color: ${colours.light};
   font-weight: 100;
   font-size: 1.4em;
+  text-align: center;
+  padding: 10px;
 `;
 
 
@@ -28,6 +30,8 @@ const InConstruction: React.FC = () => {
       <LogoContainer src={logo} alt="Realisations Logo" />
       <Construction>Website Under Construction...</Construction>
       <SubHeading>Please check back in soon</SubHeading>
+      <br />
+      <SubHeading>The downloads are now available at this site. To access the downloads, please use the link address quoted in the book.</SubHeading>
     </PageContainer>
   );
 };

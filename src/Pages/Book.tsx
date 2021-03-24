@@ -9,6 +9,7 @@ const Title = styled.h1`
   font-size: 4em;
   text-align: center;
   width: 100%;
+  margin-bottom: 10px;
 
   @media(max-width: ${SharedSettings.mobile}) {
     font-size: 3em;
@@ -25,6 +26,15 @@ const Description = styled.div`
   text-align: center;
   width: 100%;
   font-weight: 400;
+
+  span {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+
+  b {
+    font-size: 1.2em;
+  }
 
   @media(max-width: 400px) {
     font-size: 0.8em;
@@ -74,7 +84,12 @@ const Book: FC = () => {
       <Section id="Title" lastItem>
         <div className="wrapper">
           <Title>Realisations Downloads</Title>
-          <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet</Description>
+          <Description>
+            <span>Welcome to Realisations and the documents downloads to support your journey through the Realisations process.</span><br /><br />
+            <b>What to do with the downloads:</b><br />
+            Documents 1 through to 8 - Print hard copies of these are for the written work. At this stage, hand written notes are best. <br />
+            Electronic Visbo – After completing your manual VisBo, you can use this Microsoft Word template to create your electronic VisBo (eVisBo) with pictures and text boxes.
+          </Description>
         </div>
       </Section>
 
