@@ -43,22 +43,24 @@ const Container = styled.div`
 `;
 
 const MainHeader = styled.h1`
-  font-weight: 500;
-  color: ${colours.light};
+  font-weight: 300;
   font-size: 3em;
   margin: 0;
+  color: rgb(255 255 255 / 0.88);
+  text-transform: uppercase;
+  letter-spacing: 5px;
 
   @media(max-width: ${SharedSettings.mobile}) {
-    font-size: 2.4em;
+    font-size: 2em;
   }
 `;
 
 const SubHeader = styled.div`
   max-width: 1000px;
-  color: ${colours.light};
   margin-bottom: 40px;
   margin-top: 10px;
-  font-weight: 500;
+  color: rgb(255 255 255 / 40%);
+  font-weight: 300;
 
   @media(max-width: ${SharedSettings.mobile}) {
     font-size: 0.8em;
@@ -90,51 +92,50 @@ const Column = styled.div`
 const FormItem = styled.input`
   width: 100%;
   height: 50px;
-  background: ${colours.light};
+  background: #1F1F1F;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   border: 0;
-  border-radius: 4px;
   margin-bottom: 20px;
   box-sizing: border-box;
   padding: 0 20px;
   font-size: 0.8em;
   font-weight: 400;
-
-  &::placeholder {
-    color: #00A794;
-  }
+  padding-top: 6px;
+  color: #757575;
 `;
 
 const MultiLineForm = styled.textarea`
   width: 100%;
   height: 120px;
-  background: ${colours.light};
+  background: #1F1F1F;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   border: 0;
   border-radius: 4px;
   margin-bottom: 20px;
   box-sizing: border-box;
   padding: 14px 20px 0;
   font-size: 0.8em;
+  color: #757575;
   font-weight: 400;
-
-  &::placeholder {
-    color: #00A794;
-  }
 `;
 
 export const SubmitButton = styled.input`
-  border-radius: 40px;
-  background: ${colours.dark};
-  color: ${colours.Yellow};
-  border: none;
-  font-size: 0.8em;
+  color: #ffffffde;
+  background: #ffffff29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 12px 80px 11px;
+  font-weight: 400;
+  font-size: 0.7em;
   cursor: pointer;
-  padding: 14px 90px;
-  margin-top: 20px;
-  font-weight: 800;
+  border: none;
 
   &:hover {
-    color: ${colours.Yellow};
-    background: ${colours.grey5};
+    background: #ffffff69;
+    color: rgb(255 255 255 / 0.90);
   }
 `;
 
@@ -152,13 +153,12 @@ const Contact: React.FC = () => {
 
     const returnData = {
       name: data.name,
-      phone: data.phone,
       email: data.email,
       subject: data.subject,
       message: data.message,
     }
 
-    emailjs.send('admin_outlook', '260_Contacdt', returnData, 'user_YDxgyMHIC23AXohprfLhK')
+    emailjs.send('gmail', 'realisations_contact', returnData, 'user_fEKmyBrN8pN0YSaAFqeOx')
       .then((result) => {
           console.log(result.text);
           setOverlayOpen(true);
@@ -173,7 +173,7 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <Section background={colours.Yellow}>
+    <Section background={colours.dark}>
         <Container>
           <MainHeader>Contact Us</MainHeader>
           <SubHeader>If you wish to contact Realisations or the author Geoff Attewell, please leave your message below</SubHeader>
