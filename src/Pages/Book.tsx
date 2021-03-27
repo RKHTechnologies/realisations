@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { colours, PageBodyContainer, SharedSettings } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import Document from '../Components/Document';
+import Contact from '../Components/Contact';
 
 const Title = styled.h1`
   color: ${colours.light};
@@ -122,6 +123,10 @@ const Book: FC = () => {
             </DocumentsGroup>
           </DocumentsContainer>
         </div>
+      </Section>
+
+      <Section id="ContactUs" fullwidth lastItem>
+        <Contact />
       </Section>
    </PageBodyContainer>
   );
