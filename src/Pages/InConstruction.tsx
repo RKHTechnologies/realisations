@@ -1,7 +1,17 @@
 import React from "react";
-import { colours, PageContainer } from "../Shared/SharedStyles";
+import { colours, PageBodyContainer, PageContainer } from "../Shared/SharedStyles";
 import logo from '../logo.svg';
 import styled from "styled-components";
+import { Section } from "./Home";
+import Contact from "../Components/Contact";
+
+const ConstructionContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 const LogoContainer = styled.img`
   max-width: 200px;
@@ -26,13 +36,23 @@ const SubHeading = styled.div`
 
 const InConstruction: React.FC = () => {
   return (
-    <PageContainer>
-      <LogoContainer src={logo} alt="Realisations Logo" />
-      <Construction>Website Under Construction...</Construction>
-      <SubHeading>Please check back in soon</SubHeading>
-      <br />
-      <SubHeading>The downloads are now available at this site. To access the downloads, please use the link address quoted in the book.</SubHeading>
-    </PageContainer>
+    <PageBodyContainer>
+      <Section fullwidth>
+        <div className="wrapper">
+          <ConstructionContainer>
+            <LogoContainer src={logo} alt="Realisations Logo" />
+            <Construction>Website Under Construction...</Construction>
+            <SubHeading>Please check back in soon</SubHeading>
+            <br />
+            <SubHeading>The downloads are now available at this site. To access the downloads, please use the link address quoted in the book.</SubHeading>
+          </ConstructionContainer>
+        </div>
+      </Section>
+
+      <Section id="ContactUs" fullwidth lastItem>
+        <Contact />
+      </Section>
+    </PageBodyContainer>
   );
 };
 

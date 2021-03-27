@@ -158,7 +158,7 @@ const Contact: React.FC = () => {
       message: data.message,
     }
 
-    emailjs.send('admin_outlook', '260_Contact', returnData, 'user_YDxgyMHIC23AXohprfLhK')
+    emailjs.send('admin_outlook', '260_Contacdt', returnData, 'user_YDxgyMHIC23AXohprfLhK')
       .then((result) => {
           console.log(result.text);
           setOverlayOpen(true);
@@ -176,13 +176,12 @@ const Contact: React.FC = () => {
     <Section background={colours.Yellow}>
         <Container>
           <MainHeader>Contact Us</MainHeader>
-          <SubHeader>If you're looking to get involved in scouting, or simply wish to get in contact with us; please enter your message below and we will get back to you as soon as possible</SubHeader>
+          <SubHeader>If you wish to contact Realisations or the author Geoff Attewell, please leave your message below</SubHeader>
 
           <FormContainer onSubmit={handleSubmit}>
             <Column>
               <FormItem placeholder="Name" name="name" />
               <FormItem placeholder="Email" name="email" />
-              <FormItem placeholder="Phone" name="phone" />
             </Column>
 
             <Column>
