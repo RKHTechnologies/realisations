@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/realisations/static/css/main.7d180cbf.chunk.css",
-    "main.js": "/realisations/static/js/main.679a5a5a.chunk.js",
-    "main.js.map": "/realisations/static/js/main.679a5a5a.chunk.js.map",
+    "main.css": "/realisations/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/realisations/static/js/main.c7cc21fe.chunk.js",
+    "main.js.map": "/realisations/static/js/main.c7cc21fe.chunk.js.map",
     "runtime-main.js": "/realisations/static/js/runtime-main.225bb4f1.js",
     "runtime-main.js.map": "/realisations/static/js/runtime-main.225bb4f1.js.map",
     "static/js/2.888b6bcc.chunk.js": "/realisations/static/js/2.888b6bcc.chunk.js",
     "static/js/2.888b6bcc.chunk.js.map": "/realisations/static/js/2.888b6bcc.chunk.js.map",
     "index.html": "/realisations/index.html",
-    "static/css/main.7d180cbf.chunk.css.map": "/realisations/static/css/main.7d180cbf.chunk.css.map",
+    "static/css/main.8c8b27cf.chunk.css.map": "/realisations/static/css/main.8c8b27cf.chunk.css.map",
     "static/js/2.888b6bcc.chunk.js.LICENSE.txt": "/realisations/static/js/2.888b6bcc.chunk.js.LICENSE.txt",
     "static/media/1 - Realisations Life Balance Wheel.pdf": "/realisations/static/media/1 - Realisations Life Balance Wheel.213ec264.pdf",
     "static/media/2 - Realisations wheel history sheet.pdf": "/realisations/static/media/2 - Realisations wheel history sheet.5b967d70.pdf",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.225bb4f1.js",
     "static/js/2.888b6bcc.chunk.js",
-    "static/css/main.7d180cbf.chunk.css",
-    "static/js/main.679a5a5a.chunk.js"
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.c7cc21fe.chunk.js"
   ]
 }
