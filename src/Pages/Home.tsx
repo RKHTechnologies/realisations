@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import { SharedSettings, colours, PageBodyContainer } from '../Shared/SharedStyles';
 import { useHistory } from 'react-router-dom';
-import ScoutSection from '../Components/ScoutSection';
 import Footer from '../Shared/Footer';
 import Contact from '../Components/Contact';
 import { ImagesMobile, ImagesDesktop } from '../Shared/ImageLib';
@@ -116,54 +115,19 @@ const FindOutMore = styled.button`
 `;
 
 
-
-const SkillsVideo = styled.video`
-  width: 100%;
-  margin: auto;
-  display: block;
-`;
-
 const Home: FC = () => {
   const history = useHistory();
   const mobile = useMediaQuery({query: '(max-width: 470px)'});
 
   return (
     <PageBodyContainer>
-      {/* <Hero image="highRopesHero"/> */}
       
       <Section id="welcome">    
         <div className="wrapper">
 
-          
-          {/* <WelcomeContainer>
-            <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
-            <WelcomeText>
-              If you love the great outdoors, learning new skills, meeting new friends, being creative, working as a team and get the opportunity to build in confidence, self esteem and the passion to get more out of life then 2nd 60th Leicester Scout group is the place for you!
-              <br /><br />
-              Based in the heart of Leicester City for over 100 years we offer young people aged 6 - 18 years the opportunity to try a vast range of exciting indoor and outdoor activities at our very own purpose built premises.
-              <br /><br />
-              We welcome Boys and Girls to fulfil their full potential by offering knowledge and experience delivered by our team of fully trained Volunteer Leaders.
-              <br />
-              Adult volunteers are also very welcome to join in the action and to share their expertise either in uniform or behind the scenes.
-              <br /><br />
-              Many people have been Scouts over the years - Could you be the next?
-            </WelcomeText>
-            <GroupImage image={mobile ? ImagesMobile["rkh"] : ImagesDesktop["rkh"]}/>
-          </WelcomeContainer> */}
-        </div>
-      </Section>
-{/* 
-      <Section id="sections">
-        <div className="wrapper">
-          <ScoutSection />
         </div>
       </Section>
 
-      <Section id="ContactUs" fullwidth lastItem>
-        <Contact />
-      </Section> */}
-
-      {/* <Footer /> */}
     </PageBodyContainer>
   );
 }
